@@ -4,12 +4,13 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Request Quote - AV Elevators</title>
+    <link rel="icon" type="image/png" sizes="32x32" href="./assests/AV_Logo.png">
     <link rel="stylesheet" href="./css/style.css" />
     <link rel="stylesheet" href="./css/responsive-media-queries.css" />
     <link rel="stylesheet" href="./css/mobile-menu-enhanced.css" />
     <style>
       .quote-hero {
-        padding: 8rem 0 4rem;
+        padding:  6rem 0 6rem;
         background: var(--gradient-dark);
         color: var(--white);
         text-align: center;
@@ -142,6 +143,39 @@
           font-size: 2rem;
         }
       }
+      /* ==============================
+   TABLET DEVICES (iPad Portrait & Landscape)
+   768px – 1024px
+   ============================== */
+@media (min-width: 768px) and (max-width: 1024px) {
+
+  .quote-wrapper {
+    grid-template-columns: 1fr;   /* Stack instead of 2 columns */
+    gap: 2.5rem;
+  }
+
+  .form-row {
+    grid-template-columns: 1fr;   /* Better spacing on tablet */
+  }
+
+  .quote-hero h1 {
+    font-size: 2.4rem;
+  }
+
+  .quote-info,
+  .quote-form {
+    padding: 2rem;
+  }
+
+  .navbar .nav-menu {
+    gap: 1rem;
+  }
+
+  .search-box input {
+    width: 160px;
+  }
+}
+
     </style>
   </head>
   <body>
@@ -1018,7 +1052,11 @@
       </svg>
     </button>
 
+    <script src="./js/index.js"></script>
+    <!-- <script src="./js/mobile-menu-enhanced.js"></script> -->
+    <script src="./js/universal-script.js"></script>
     <script>
+        
       const mobileToggle = document.getElementById("mobileToggle");
       const navMenu = document.getElementById("navMenu");
       mobileToggle.addEventListener("click", () => {
@@ -1156,8 +1194,6 @@
         });
       }
     </script>
-    <script src="./js/index.js"></script>
-    <script src="./js/mobile-menu-enhanced.js"></script>
-    <script src="./js/universal-script.js"></script>
+    
   </body>
 </html>
