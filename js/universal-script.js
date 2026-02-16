@@ -325,33 +325,6 @@ function changeImage(imageSrc, element) {
 window.changeImage = changeImage;
 
 // ==========================================
-// QUOTE FORM PAGE (quote.html)
-// ==========================================
-const quoteForm = document.getElementById('quoteForm');
-if (quoteForm) {
-    quoteForm.addEventListener('submit', function (e) {
-        e.preventDefault();
-
-        const successMessage = document.getElementById('successMessage');
-        if (successMessage) {
-            successMessage.classList.add('show');
-        }
-
-        this.reset();
-
-        if (successMessage) {
-            successMessage.scrollIntoView({ behavior: 'smooth', block: 'center' });
-        }
-
-        setTimeout(() => {
-            if (successMessage) {
-                successMessage.classList.remove('show');
-            }
-        }, 5000);
-    });
-}
-
-// ==========================================
 // SEARCH BOX FUNCTIONALITY
 // ==========================================
 const searchBox = document.getElementById('searchBox');
