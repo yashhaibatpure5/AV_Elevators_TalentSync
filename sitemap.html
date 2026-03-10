@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sitemap - AV Elevators</title>
+    <link rel="icon" type="image/png" sizes="32x32" href="./assests/AV_Logo.png">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+            background: #f5f5f7;
+            color: #1d1d1f;
+            line-height: 1.6;
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        /* Header */
+        header {
+            background: #fff;
+            padding: 60px 0 40px;
+            text-align: center;
+            border-bottom: 1px solid #d2d2d7;
+        }
+
+        header h1 {
+            font-size: 48px;
+            font-weight: 600;
+            letter-spacing: -0.5px;
+            margin-bottom: 12px;
+            color: #1d1d1f;
+        }
+
+        header p {
+            font-size: 21px;
+            color: #6e6e73;
+            font-weight: 400;
+        }
+
+        /* Main Content */
+        main {
+            padding: 60px 0 80px;
+        }
+
+        .sitemap-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 40px;
+            margin-top: 40px;
+        }
+
+        .sitemap-section {
+            background: #fff;
+            border-radius: 18px;
+            padding: 32px;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .sitemap-section:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
+        }
+
+        .sitemap-section h2 {
+            font-size: 24px;
+            font-weight: 600;
+            margin-bottom: 20px;
+            color: #1d1d1f;
+            letter-spacing: -0.3px;
+        }
+
+        .sitemap-section ul {
+            list-style: none;
+        }
+
+        .sitemap-section li {
+            margin-bottom: 12px;
+        }
+
+        .sitemap-section a {
+            color: #0071e3;
+            text-decoration: none;
+            font-size: 17px;
+            display: inline-block;
+            position: relative;
+            transition: color 0.2s ease;
+        }
+
+        .sitemap-section a::after {
+            content: '';
+            position: absolute;
+            width: 0;
+            height: 1px;
+            bottom: -2px;
+            left: 0;
+            background-color: #0071e3;
+            transition: width 0.3s ease;
+        }
+
+        .sitemap-section a:hover {
+            color: #0077ed;
+        }
+
+        .sitemap-section a:hover::after {
+            width: 100%;
+        }
+
+        /* Subsection styling */
+        .subsection {
+            margin-top: 16px;
+            padding-left: 16px;
+            border-left: 2px solid #f5f5f7;
+        }
+
+        .subsection-title {
+            font-size: 15px;
+            font-weight: 600;
+            color: #6e6e73;
+            margin-bottom: 8px;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+
+        .subsection li {
+            margin-bottom: 8px;
+        }
+
+        .subsection a {
+            font-size: 15px;
+            color: #424245;
+        }
+
+        .subsection a:hover {
+            color: #0071e3;
+        }
+
+        /* Footer */
+        footer {
+            background: #fff;
+            padding: 40px 0;
+            text-align: center;
+            border-top: 1px solid #d2d2d7;
+            margin-top: 60px;
+        }
+
+        footer p {
+            color: #6e6e73;
+            font-size: 14px;
+        }
+
+        footer a {
+            color: #0071e3;
+            text-decoration: none;
+        }
+
+        footer a:hover {
+            text-decoration: underline;
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            header h1 {
+                font-size: 36px;
+            }
+
+            header p {
+                font-size: 18px;
+            }
+
+            .sitemap-grid {
+                grid-template-columns: 1fr;
+                gap: 24px;
+            }
+
+            .sitemap-section {
+                padding: 24px;
+            }
+
+            .sitemap-section h2 {
+                font-size: 21px;
+            }
+        }
+
+        /* Icon styling */
+        .section-icon {
+            display: inline-block;
+            margin-right: 8px;
+            opacity: 0.7;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Sitemap</h1>
+            <p>Complete navigation guide for AV Elevators website</p>
+        </div>
+    </header>
+
+    <main>
+        <div class="container">
+            <div class="sitemap-grid">
+                
+                <!-- Main Pages -->
+                <div class="sitemap-section">
+                    <h2><span class="section-icon">🏠</span>Main Pages</h2>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="products.html">Products</a></li>
+                        <li><a href="gallery.html">Gallery</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                        <li><a href="quote.html">Request Quote</a></li>
+                    </ul>
+                </div>
+
+                <!-- Passenger Elevators -->
+                <div class="sitemap-section">
+                    <h2><span class="section-icon">🏢</span>Passenger Elevators</h2>
+                    <ul>
+                        <li><a href="passenger-elevators.html">Passenger Elevators Overview</a></li>
+                    </ul>
+                    <div class="subsection">
+                        <div class="subsection-title">Types</div>
+                        <ul>
+                            <li><a href="passenger-elevators.html#gearless">Gearless Elevators</a></li>
+                            <li><a href="passenger-elevators.html#mrl">MRL Elevators</a></li>
+                            <li><a href="passenger-elevators.html#highspeed">High-Speed Elevators</a></li>
+                            <li><a href="passenger-elevators.html#residential">Residential Elevators</a></li>
+                            <li><a href="passenger-elevators.html#commercial">Commercial Elevators</a></li>
+                            <li><a href="passenger-elevators.html#glass">Glass Elevators</a></li>
+                            <li><a href="passenger-elevators.html#capsule">Capsule Elevators</a></li>
+                            <li><a href="passenger-elevators.html#machine-room">Machine Room Elevators</a></li>
+                            <li><a href="passenger-elevators.html#observation">Observation Elevators</a></li>
+                            <li><a href="passenger-elevators.html#panoramic">Panoramic Elevators</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Hydraulic Lifts -->
+                <div class="sitemap-section">
+                    <h2><span class="section-icon">⚙️</span>Hydraulic Lifts</h2>
+                    <ul>
+                        <li><a href="hydraulic-lifts.html">Hydraulic Lifts Overview</a></li>
+                    </ul>
+                    <div class="subsection">
+                        <div class="subsection-title">Types</div>
+                        <ul>
+                            <li><a href="hydraulic-lifts.html#cargo">Cargo Lifts</a></li>
+                            <li><a href="hydraulic-lifts.html#vehicle">Vehicle Lifts</a></li>
+                            <li><a href="hydraulic-lifts.html#industrial">Industrial Lifts</a></li>
+                            <li><a href="hydraulic-lifts.html#goods">Goods Lifts</a></li>
+                            <li><a href="hydraulic-lifts.html#platform">Platform Lifts</a></li>
+                            <li><a href="hydraulic-lifts.html#scissor">Scissor Lifts</a></li>
+                            <li><a href="hydraulic-lifts.html#dock">Dock Levelers</a></li>
+                            <li><a href="hydraulic-lifts.html#warehouse">Warehouse Lifts</a></li>
+                            <li><a href="hydraulic-lifts.html#automobile">Automobile Lifts</a></li>
+                            <li><a href="hydraulic-lifts.html#freight">Freight Elevators</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Home Lifts -->
+                <div class="sitemap-section">
+                    <h2><span class="section-icon">🏡</span>Home Lifts</h2>
+                    <ul>
+                        <li><a href="home-lifts.html">Home Lifts Overview</a></li>
+                    </ul>
+                    <div class="subsection">
+                        <div class="subsection-title">Types</div>
+                        <ul>
+                            <li><a href="home-lifts.html#villa">Villa Elevators</a></li>
+                            <li><a href="home-lifts.html#compact">Compact Home Lifts</a></li>
+                            <li><a href="home-lifts.html#luxury">Luxury Home Lifts</a></li>
+                            <li><a href="home-lifts.html#wheelchair">Wheelchair Lifts</a></li>
+                            <li><a href="home-lifts.html#stair">Stair Lifts</a></li>
+                            <li><a href="home-lifts.html#dumbwaiter">Dumbwaiter Lifts</a></li>
+                            <li><a href="home-lifts.html#outdoor">Outdoor Lifts</a></li>
+                            <li><a href="home-lifts.html#duplex">Duplex Lifts</a></li>
+                            <li><a href="home-lifts.html#bungalow">Bungalow Lifts</a></li>
+                            <li><a href="home-lifts.html#custom-home">Custom Home Lifts</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Hospital & Service Lifts -->
+                <div class="sitemap-section">
+                    <h2><span class="section-icon">🏥</span>Hospital & Service</h2>
+                    <ul>
+                        <li><a href="hospital-service-lifts.html">Hospital & Service Lifts Overview</a></li>
+                    </ul>
+                    <div class="subsection">
+                        <div class="subsection-title">Types</div>
+                        <ul>
+                            <li><a href="hospital-service-lifts.html#hospital">Hospital Elevators</a></li>
+                            <li><a href="hospital-service-lifts.html#bed">Bed Elevators</a></li>
+                            <li><a href="hospital-service-lifts.html#service">Service Elevators</a></li>
+                            <li><a href="hospital-service-lifts.html#stretcher">Stretcher Lifts</a></li>
+                            <li><a href="hospital-service-lifts.html#medical">Medical Elevators</a></li>
+                            <li><a href="hospital-service-lifts.html#firefighter">Firefighter Elevators</a></li>
+                            <li><a href="hospital-service-lifts.html#emergency">Emergency Lifts</a></li>
+                            <li><a href="hospital-service-lifts.html#hotel">Hotel Elevators</a></li>
+                            <li><a href="hospital-service-lifts.html#mall">Shopping Mall Lifts</a></li>
+                            <li><a href="hospital-service-lifts.html#office">Office Building Lifts</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Services -->
+                <div class="sitemap-section">
+                    <h2><span class="section-icon">🔧</span>Services</h2>
+                    <ul>
+                        <li><a href="index.html#maintenance">Maintenance</a></li>
+                        <li><a href="#installation">Installation</a></li>
+                        <li><a href="#amc">AMC Packages</a></li>
+                        <li><a href="#modernization">Modernization</a></li>
+                        <li><a href="#repair">Repair & Maintenance</a></li>
+                        <li><a href="#consultation">Free Consultation</a></li>
+                        <li><a href="#spares">Spare Parts</a></li>
+                    </ul>
+                </div>
+
+                <!-- About Sections -->
+                <div class="sitemap-section">
+                    <h2><span class="section-icon">ℹ️</span>About & Info</h2>
+                    <ul>
+                        <li><a href="index.html#about">About Company</a></li>
+                        <li><a href="index.html#products">Products Preview</a></li>
+                        <li><a href="about.html#review">Ratings & Reviews</a></li>
+                        <li><a href="index.html#home">Hero Section</a></li>
+                    </ul>
+                </div>
+
+                <!-- Contact & Support -->
+                <div class="sitemap-section">
+                    <h2><span class="section-icon">📞</span>Contact & Support</h2>
+                    <ul>
+                        <li><a href="contact.html">Contact Us</a></li>
+                        <li><a href="contact.html#contact-form">Contact Form</a></li>
+                        <li><a href="quote.html">Request Quote</a></li>
+                        <li><a href="index.html#contact">Footer Contact Info</a></li>
+                    </ul>
+                </div>
+
+                <!-- Legal & Policies -->
+                <div class="sitemap-section">
+                    <h2><span class="section-icon">📄</span>Legal & Policies</h2>
+                    <ul>
+                        <li><a href="#privacy">Privacy Policy</a></li>
+                        <li><a href="#terms">Terms & Conditions</a></li>
+                        <li><a href="sitemap.html">Sitemap</a></li>
+                    </ul>
+                </div>
+
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2026 AV Elevators. All Rights Reserved. | <a href="index.html">Back to Home</a></p>
+        </div>
+    </footer>
+</body>
+</html>
